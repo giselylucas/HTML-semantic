@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Page 1</title>
+    <link rel="stylesheet" href="customCss.css" />
+    <link rel="stylesheet" href="page2.css" />
+    <link href="http://fonts.googleapis.com/css?family=Courgette|Roboto:400,300" rel="stylesheet" type="text/css" />
+    <script src="page2.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <h1>HTML Training</h1>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="#">About HTML</a>
+                <a href="#">References</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="h2">Lorem Ipsum - title</div>
+            <div class="expansion">
+                <div class="button collapsible" onclick="onClick(this)"><span class="h3">Expansion 1</span></div>
+                <div class="expansion-details hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="button collapsible" onclick="onClick(this)"><span class="h3">Expansion 2</span></div>
+                <div class="expansion-details hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="button collapsible" onclick="onClick(this)"><span class="h3">Expansion 3</span></div>
+                <div class="expansion-details hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <form id="form1" onsubmit="return false">
+                    <div class="h2">Fill the fields below</div>
+                    <div id="group1" class="fieldset select-fieldset">
+                        <span class="legend">Select your level:</span>
+                        <input id="r0" type="radio" name="rType" value="0" required aria-required="true" />
+                        <span for="r0" class="radioText">
+                            Newbie
+                        </span>
+                        <input id="r1" type="radio" name="rType" value="1" /> 
+                        <span for="r1" class="radioText">
+                            Beginner
+                        </span>
+                        <input id="r2" type="radio" name="rType" value="2" /> 
+                        <span for="r2" class="radioText">
+                            Padawan
+                        </span>
+                        <input id="r3" type="radio" name="rType" value="3" />
+                        <span for="r3" class="radioText">
+                            Knight
+                        </span>
+                        <input id="r4" type="radio" name="rType" value="4" />
+                        <span for="r4" class="radioText">
+                            Jedi
+                        </span>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <span for="fName">Full Name</span>
+                            <input type="text" name="fullName" id="fName" required aria-required="true"
+                                class="text-field" />
+                        </div>
+
+                        <div class="row">
+                            <span for="address">Address</span>
+                            <textarea id="address" name="addressTxt" required aria-required="true" rows="3"
+                                class="text-field"></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="inline-control col-1">
+                                <span for="country">Country: </span>
+                                <select name="country" id="country" required aria-required="true" class="select-field">
+                                    <option value="0">Argentina</option>
+                                    <option value="1">Brazil</option>
+                                    <option value="2">Japan</option>
+                                </select>
+                            </div>
+
+                            <div class="inline-control col-2">
+                                <input id="cType" type="checkbox" name="cType" required aria-required="true" />
+                                <span class="checkboxText" for="cType">
+                                    Do you agree the
+                                    <a href="#">Terms & Conditions</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <button id="submitBtn" class="submit" onclick="buttonForm()">Search</button>
+                        </div>
+                    </div>
+                    <span id="error-message" class="error-alert" aria-live="polite"></span>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script></script>
+</body>
+
+</html>

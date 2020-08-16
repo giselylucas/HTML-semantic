@@ -1,0 +1,64 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+header {
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+main {
+    margin: 20px;
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    font-weight: 100;
+    font-size: 30px;
+    padding: 0.25em 0.5em;
+}
+
+/* Nav */
+
+.menu {
+    padding: 16px 48px;
+    background-color: #074b59;
+    color: #FFF;
+}
+
+.menu a {
+    text-decoration: none;
+    margin-right: 18px;
+    color: #FFF;
+    text-align: center;
+    padding: 15px;
+}
+
+.menu a:hover {
+    background-color: #FFF;
+    border-color: 1px solid #FFF;
+    color: #074b59;
+}
+
+.menu .pull-right {
+    float: right;
+    padding: 0px;
+}
+
+.click-stealer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #FFF;
+}
