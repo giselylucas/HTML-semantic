@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Exercicio 1</title>
+    <link rel="stylesheet" href="ex1.css" />
+    <link href="http://fonts.googleapis.com/css?family=Courgette|Roboto:400,300" rel="stylesheet" type="text/css" />
+    <script src="ex1.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <h1>HTML Training</h1>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="#">About HTML</a>
+                <a href="#">References</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <h2>Lorem Ipsum - title</h2>
+            <div class="expansion">
+                <button type="button" class="collapsible" onclick="onClick(this)"><h3>Expansion 1</h3></button>
+                <div class="expansion-details hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button type="button" class="collapsible" onclick="onClick(this)"><h3>Expansion 2</h3></button>
+                <div class="expansion-details hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button type="button" class="collapsible" onclick="onClick(this)"><h3>Expansion 3</h3></button>
+                <div class="expansion-details hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <form id="form1" onsubmit="return false">
+                    <h2>Fill the fields below</h2>
+                    <fieldset id="group1" class="select-fieldset">
+                        <legend>Select your level:</legend>
+                        <input id="r0" type="radio" name="rType" value="0" required aria-required="true" />
+                        <label for="r0" class="radioText">
+                            Newbie
+                        </label>
+                        <input id="r1" type="radio" name="rType" value="1" /> 
+                        <label for="r1" class="radioText">
+                            Beginner
+                        </label>
+                        <input id="r2" type="radio" name="rType" value="2" /> 
+                        <label for="r2" class="radioText">
+                            Padawan
+                        </label>
+                        <input id="r3" type="radio" name="rType" value="3" />
+                        <label for="r3" class="radioText">
+                            Knight
+                        </label>
+                        <input id="r4" type="radio" name="rType" value="4" />
+                        <label for="r4" class="radioText">
+                            Jedi
+                        </label>
+                    </fieldset>
+
+                    <div class="container">
+                        <div class="row">
+                            <label for="fName">Full Name</label>
+                            <input type="text" name="fullName" id="fName" required aria-required="true"
+                                class="text-field" />
+                        </div>
+
+                        <div class="row">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="addressTxt" required aria-required="true" rows="3"
+                                class="text-field"></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="inline-control col-1">
+                                <label for="country">Country: </label>
+                                <select name="country" id="country" required aria-required="true" class="select-field">
+                                    <option value="0">Argentina</option>
+                                    <option value="1">Brazil</option>
+                                    <option value="2">Japan</option>
+                                </select>
+                            </div>
+
+                            <div class="inline-control col-2">
+                                <input id="cType" type="checkbox" name="cType" required aria-required="true" />
+                                <label class="checkboxText" for="cType">
+                                    Do you agree the
+                                    <a href="#">Terms & Conditions</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <button id="submitBtn" class="submit" onclick="buttonForm()">Search</button>
+                        </div>
+                    </div>
+                    <span id="error-message" class="error-alert" aria-live="polite"></span>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script></script>
+</body>
+
+</html>
